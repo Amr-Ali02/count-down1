@@ -4,6 +4,7 @@ let hours = document.createElement("span");
 let mins = document.createElement("span");
 let secs = document.createElement("span");
 let dtxt = document.createElement("span");
+let count = document.getElementById("count");
 days.style.cssText = `
 font-size:40px;
 `;
@@ -26,6 +27,7 @@ let stxt = document.createElement("span");
 stxt.innerHTML = "Secounds";
 
 pdiv.style.cssText = `
+text-align:center;
 font-family:arial;
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -57,5 +59,5 @@ setInterval(() => {
   ${mtxt.outerHTML}
   ${stxt.outerHTML}
   `;
-  document.body.innerHTML = pdiv.outerHTML;
+  count.innerHTML = pdiv.outerHTML;
 }, 1e3);
