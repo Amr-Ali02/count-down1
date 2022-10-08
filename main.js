@@ -12,8 +12,9 @@ setInterval(() => {
   let uphours = (diff - updays) * 24;
   let upminutes = (uphours - Math.floor(uphours)) * 60;
   let upsec = (upminutes - Math.floor(upminutes)) * 60;
-  days.innerHTML = updays;
-  hours.innerHTML = Math.trunc(uphours);
-  Minutes.innerHTML = Math.trunc(upminutes);
-  secs.innerHTML = Math.trunc(upsec);
+  // days.innerHTML = updays;
+  // hours.innerHTML = Math.trunc(uphours);
+  // Minutes.innerHTML = Math.trunc(upminutes);
+  // secs.innerHTML = Math.trunc(upsec);
+  console.log(updays)
 }, 1e3);
