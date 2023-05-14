@@ -6,7 +6,7 @@ let secs = document.querySelector(".count span:nth-child(4)");
 
 setInterval(() => {
   let current = new Date();
-  let future = new Date("11 4 2022");
+  let future = new Date("5 17 2023");
   let diff = (future - current) / 1e3 / 60 / 60 / 24;
   let updays = Math.floor(diff);
   let uphours = (diff - updays) * 24;
@@ -69,7 +69,6 @@ setInterval(() => {
   m2.setAttribute("src", `images/lscale_${fm2}.png`);
   let msd = document.querySelector(".msd");
   msd.innerHTML = m2.outerHTML;
-
 
   let s1 = document.createElement("img");
   upsec = upsec.toString();
